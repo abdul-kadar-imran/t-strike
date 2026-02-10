@@ -1,0 +1,7 @@
+{
+  "name": "T-STRIKE: Arcade Typing Shooter",
+  "description": "A visually stunning futuristic top-down arcade typing game where players destroy enemy gunships by typing their identifiers. Features multiple ships, neon visuals, and high-intensity gameplay.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
