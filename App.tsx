@@ -5,6 +5,7 @@ import GameCanvas from './components/GameCanvas';
 import ResultsScreen from './components/ResultsScreen';
 import Background from './components/Background';
 import CinematicIntro from './components/CinematicIntro';
+import Footer from './components/Footer';
 import { GameState, ShipConfig, GameStats } from './types';
 
 const App: React.FC = () => {
@@ -31,7 +32,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-slate-950 text-white font-sans selection:bg-blue-500/30">
+    <div
+      className="relative w-full min-h-screen overflow-x-hidden overflow-y-auto bg-slate-950 text-white font-sans selection:bg-blue-500/30 flex flex-col"
+      style={{ width: '100%', minHeight: '100vh' }}
+    >
       <Background />
       
       {gameState === GameState.MENU && (
@@ -58,6 +62,8 @@ const App: React.FC = () => {
       
       {/* Decorative scanline effect */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_2px,3px_100%] z-50"></div>
+      
+      <Footer />
     </div>
   );
 };

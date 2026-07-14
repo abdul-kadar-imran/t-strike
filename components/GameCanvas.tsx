@@ -400,7 +400,7 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ ship, onGameOver }) => {
   }, [spawnEnemy, spawnBoss, onGameOver, ship]);
 
   return (
-    <div ref={containerRef} className="relative w-full h-full overflow-hidden cursor-none">
+    <div ref={containerRef} className="relative flex-1 w-full min-h-[500px] overflow-hidden cursor-none">
       <div className="absolute top-4 sm:top-8 left-4 sm:left-8 z-20 flex flex-col items-start gap-1">
         <div className="text-blue-400 text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] font-bold">TACTICAL_SCORE</div>
         <div className="text-2xl sm:text-4xl font-black italic tracking-tighter mono neon-glow">{uiState.score.toString().padStart(6, '0')}</div>

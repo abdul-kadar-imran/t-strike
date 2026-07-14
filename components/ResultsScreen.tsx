@@ -25,7 +25,7 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ stats, onRestart }) => {
   const rank = getRank();
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 bg-slate-950/90 backdrop-blur-xl animate-in fade-in duration-700 overflow-y-auto">
+    <div className="relative z-10 flex flex-col items-center justify-center flex-1 w-full p-4 sm:p-6 bg-slate-950/90 backdrop-blur-xl animate-in fade-in duration-700">
       <div className="max-w-4xl w-full py-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-4xl sm:text-6xl font-black italic tracking-tighter mb-2 neon-glow">MISSION TERMINATED</h2>

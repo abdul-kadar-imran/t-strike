@@ -49,7 +49,7 @@ const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) => {
   }, [currentLineIndex, currentCharIndex, visibleLines, onComplete]);
 
   return (
-    <div className="relative z-50 flex flex-col items-center justify-center min-h-screen bg-slate-950 px-6 text-center select-none cursor-none">
+    <div className="relative z-50 flex flex-col items-center justify-center flex-1 w-full bg-slate-950 px-6 text-center select-none cursor-none py-12 md:py-24">
       <div className="space-y-4 max-w-2xl">
         {visibleLines.map((line, idx) => (
           <div 

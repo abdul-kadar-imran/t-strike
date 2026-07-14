@@ -22,7 +22,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ onStart }) => {
   const selectedShip = SHIPS.find(s => s.id === selectedShipId)!;
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-6 text-white bg-transparent">
+    <div className="relative z-10 flex flex-col items-center justify-center flex-1 w-full p-6 text-white bg-transparent py-12 md:py-24">
       <div className="text-center mb-12">
         <h1 className="text-7xl md:text-9xl font-bold tracking-tighter mb-4 italic text-transparent bg-clip-text bg-gradient-to-b from-white to-blue-500 neon-glow">
           T-STRIKE
